@@ -74,7 +74,8 @@ Server and client will negotiate and choose highest version of supported protoco
         fprintf(stderr, "starting tls server @%s:%d\n", serveraddr.c_str(), serverport);
         if (tlsserver.tls_create(serverport, serveraddr, cert, key, cacert))
         {
-            std::thread tServer = std::thread(&Network::TlsServer::tls_start_server, &tlsserver, &MsgRecvCallback, buffer, sizeof(buffer));
+            std::thread tServer = std::thread(&Network::TlsServer::tls_start_server, &tlsserver, 
+                                              &MsgRecvCallback, buffer, sizeof(buffer));
             tServer.join();
         }
         return 0;
