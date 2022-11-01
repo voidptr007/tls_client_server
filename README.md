@@ -1,5 +1,4 @@
-## Description
-This project provides a set of APIs to create a TLS based secure client-server application
+TLS Client Server project provides a set of APIs to create a TLS based secure client-server application
 over TCP. The easy and ready to use APIs will bringup a client and server in matter of minutes.
 The APIs provide extension points to implement business specific logic. Refer instructions to
 create self-signed certificates in detailed description. Sample certificates are also made
@@ -11,7 +10,7 @@ available for a quick test of the APIs.
 3. Usage with example
 4. Certificate creation
 
-# Code structure
+## Code structure
 - certs - contains self-sigend root, server and client certificates for test
 - include - contains all header files (hpp)
 - src - contains all implementation code (cpp)
@@ -24,7 +23,7 @@ available for a quick test of the APIs.
 - Lib Cyrpto
 - Lib SSL
 
-# How to build & run
+## How to build & run
 Create build folder in project root directory and run cmake and make commands from there. Both client and server executables will be generated in build directory. Server port is optional, default 9000 is used.
 ```console
 tls_client_server$ mkdir build
@@ -39,7 +38,7 @@ tls_client_server/build$ ./tlsclient <server port>
 
 ![image](/tlsclientoutput.png)
 
-# Usage with examples
+## Usage with examples
 ## TlsServer
 Create an object of type TlsServer, providing port number and server address (optional).
 Start tls server in a thread. Provide receive callback handler and buffer to store received data.
