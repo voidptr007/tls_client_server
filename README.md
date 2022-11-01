@@ -1,4 +1,13 @@
 # Project: tls client server
+
+## Description
+This project provides a set of APIs to create a TLS based secure client-server application
+over TCP. The easy and ready to use APIs will bringup a client and server in matter of minutes.
+The APIs provide extension points to implement business specific logic. Refer instructions to
+create self-signed certificates in detailed description. Sample certificates are also made
+available for a quick test of the APIs.
+
+## Index
 1. Code Structure & Build
 2. Dependencies
 3. Usage with example
